@@ -1,8 +1,6 @@
 <!-- {% extends "base.html" } -->
 
-{% block title %}
-    DadSite
-{% endblock %}
+
 {% load static %}
 
 {% block css_files %}
@@ -10,27 +8,34 @@
 {% endblock %}
 
 {% block content %}
+<title>DadSite</title>
 
-<header>
-    <h1><a href="">DadSite</a></h1>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">DadSite</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Articles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Character Study</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Reading List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Privacy Policy</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-    <section id="Enter the DadSite">
-        <header>
-            <img src="{% static "articles/images/Dad.png" %}" alt="DadSite Logo" />
-        </header>
-        <p></p>
-    </section>
-    <nav><a href="">Articles</a></nav>
-    <nav><a href="">Character Study</a></nav>
-    <nav><a href="">Reading List</a></nav>
-    <nav><a href="">About</a></nav>
-    <nav><a href="">Privacy Policy</a></nav>
-
-</header>
-
-
-
-    <section>
-
-    </section>
 {% endblock %}

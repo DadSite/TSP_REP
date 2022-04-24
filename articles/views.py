@@ -23,3 +23,4 @@ def character_study(request):
 
 def privacy_policy(request):
     return render(request, "articles/privacy-policy.html")
+
